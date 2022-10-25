@@ -69,3 +69,7 @@ CRUD
 9,5 Also import the form class and redirect in view.py
 
 
+10 Update and Delete
+https://absolutecodeworks.com/python-django-crud-sample-with-json-data
+
+

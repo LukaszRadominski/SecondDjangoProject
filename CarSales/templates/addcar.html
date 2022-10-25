@@ -15,22 +15,22 @@
 <body>
     <h2>Car Details</h2>
 
-    <form action="" method = "POST">{% csrf_token %}    <!--   In the HTML form, we have to add {% csrf_token %} next to form tag to avoid csrf verification failed error.  -->
+    <form action="" method = "POST">{% csrf_token %}
         <div class="form-group row">
           <label for="id">Id</label>
-          <input type="text" class="form-control" name="id" id="id">
+          <input type="text" class="form-control" name="id" id="id" value="{{car.id}}">
         </div>
         <div class="form-group row">
             <label for="name">Maker and Model</label>
-            <input type="text" class="form-control" name="name" id="name">
+            <input type="text" class="form-control" name="name" id="name" value="{{car.name}}">
         </div>
         <div class="form-group row">
             <label for="year">Make Year</label>
-            <input type="text" class="form-control" name="year" id="year">
+            <input type="text" class="form-control" name="year" id="year" value="{{car.year}}">
         </div>
         <div class="form-group row">
             <label for="price">Sell Price</label>
-            <input type="text" class="form-control" name="price" id="price">
+            <input type="text" class="form-control" name="price" id="price" value="{{car.price}}">
         </div>
         <button type="btnAdd" class="btn btn-primary">Submit</button>
         <a href="/" class="btn btn-primary">Cancel</a>
