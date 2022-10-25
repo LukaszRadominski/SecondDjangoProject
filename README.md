@@ -56,3 +56,16 @@ In repository:
     {"id":"5", "name":"Nissan Altima", "year":"2021", "price":"3000"}
 ]
 
+8 List 
+8.1 carslist.html is going to hold the list of cars available for sale. To list the items, add below code in the body of html. Here, we using a for loop to bind the data to a table.
+
+CRUD
+
+9 Create
+9,1 Add a new url pattern for addcar in the app urls.py. 
+9,2 Add new html file addcar.html in templates folder and place new code.
+9,3 Html uses forms. To handle forms in Django we need a form class. Add an new file forms.py in the CarSales app folder and include the form details.
+9,4 Then add new code in view.py as the second function below carslist function. 
+9,5 Also import the form class and redirect in view.py
+
+
